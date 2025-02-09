@@ -9,7 +9,7 @@ contract NftContract is ERC721 {
 
     constructor() ERC721("Winter Cohort Certificate", "WCC") {}
 
-    function _mint(string[] memory tokenUris) public {
+    function mintBatch(string[] memory tokenUris) public {
         uint256 length = tokenUris.length;
 
         for (uint256 i = 0; i < length; i++) {
