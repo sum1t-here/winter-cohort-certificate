@@ -37,5 +37,4 @@ contract NftContractTest is Test {
         // Check balance
         assertEq(nft.balanceOf(USER), 4);
     }
-
 }
